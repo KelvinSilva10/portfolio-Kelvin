@@ -1,3 +1,16 @@
+My Portfolio
+#PROJETO EM DESENVOLVIMENTO
+
+Tecnologias Utilizadas :
+
+- Javascript
+- Css
+- ReactJs
+- Typescript
+- Chakra Ui
+- Eslint 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

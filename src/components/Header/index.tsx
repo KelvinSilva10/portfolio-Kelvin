@@ -43,7 +43,7 @@ export const Header = () => {
               color: '#0DBDE3',
             }}
           >
-            HABLIDADES
+            HABILIDADES
           </ListItem>
           <ListItem
             cursor='pointer'

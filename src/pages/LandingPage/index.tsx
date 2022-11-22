@@ -1,20 +1,10 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Image,
-  keyframes,
-  Link,
-  LinkBox,
-  Text,
-  usePrefersReducedMotion,
-} from '@chakra-ui/react';
+import { Box, Flex, Heading, Image, keyframes, Text } from '@chakra-ui/react';
 
 import { DivImgs } from '../../components/DivImgs';
 import Retangulo from '../../assets/retangulos.svg';
 import { Header } from '../../components/Header';
 import { DivInfo } from '../../components/DivInfo';
+import { AboutMe } from '../../components/AboutMe';
 
 const animationRetangules = keyframes`
   0% { transform: scale(1.2) ;  opacity:0.4}
@@ -32,7 +22,7 @@ export const LandingPage = () => {
     <>
       <Header />
       <Flex
-        w='100vw'
+        w='100%'
         h='100vh'
         display='flex'
         flexDirection={['column', 'column', 'row', 'row']}
@@ -54,6 +44,7 @@ export const LandingPage = () => {
         <DivInfo />
         <DivImgs />
       </Flex>
+      <AboutMe />
     </>
   );
 };

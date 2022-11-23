@@ -5,6 +5,7 @@ import Retangulo from '../../assets/retangulos.svg';
 import { Header } from '../../components/Header';
 import { DivInfo } from '../../components/DivInfo';
 import { AboutMe } from '../../components/AboutMe';
+import { Skills } from '../../components/Skills';
 
 const animationRetangules = keyframes`
   0% { transform: scale(1.2) ;  opacity:0.4}
@@ -45,6 +46,7 @@ export const LandingPage = () => {
         <DivImgs />
       </Flex>
       <AboutMe />
+      <Skills />
     </>
   );
 };

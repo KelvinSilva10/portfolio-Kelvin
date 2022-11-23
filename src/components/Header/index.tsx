@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <Flex
       as='header'
-      h='106px'
+      h={['70px', '70px', '100px', '100px']}
       w='100%'
       bg='linear-gradient(180deg, #1A2246 0%, rgba(27, 34, 64, 0.53) 100%)'
       position='fixed'
@@ -19,7 +19,7 @@ export const Header = () => {
           listStyleType='none'
           display='flex'
           gap='40px'
-          fontSize='lg'
+          fontSize={['md', 'md', 'lg', 'lg']}
         >
           <ListItem
             cursor='pointer'

@@ -35,12 +35,14 @@
     }
   },
   "rules": {
+    "@typescript-eslint/no-var-requires": "off",
     "react/function-component-definition": "off",
     "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
     "react/require-default-props": "off",
+    "no-dynamic-require": 0,
     "jsx-a11y/label-has-associated-control": [
       "error",
       {

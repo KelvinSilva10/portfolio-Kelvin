@@ -2,6 +2,7 @@ import {
   extendTheme,
   type ThemeConfig,
   theme as ChakraTheme,
+  border,
 } from '@chakra-ui/react';
 
 const config: ThemeConfig = {
@@ -18,12 +19,12 @@ export const theme = extendTheme({
         color: 'white',
         lineHeight: 'tall',
         fontFamily: 'Montserrat',
+        margin: '0',
       },
-      a: {
-        color: 'red',
-      },
+
       'ul, ol': {
         styleType: 'none',
+        margin: '0px',
       },
     },
   },

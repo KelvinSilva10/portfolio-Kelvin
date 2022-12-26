@@ -1,4 +1,12 @@
-import { Box, Flex, Heading, Image, keyframes, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Card,
+  Flex,
+  Heading,
+  Image,
+  keyframes,
+  Text,
+} from '@chakra-ui/react';
 
 import { DivImgs } from '../../components/DivImgs';
 import Retangulo from '../../assets/retangulos.svg';
@@ -6,6 +14,7 @@ import { Header } from '../../components/Header';
 import { DivInfo } from '../../components/DivInfo';
 import { AboutMe } from '../../components/AboutMe';
 import { Skills } from '../../components/Skills';
+import { Projects } from '../../components/Projects';
 
 const animationRetangules = keyframes`
   0% { transform: scale(1.2) ;  opacity:0.4}
@@ -47,6 +56,7 @@ export const LandingPage = () => {
       </Flex>
       <AboutMe />
       <Skills />
+      <Projects />
     </>
   );
 };

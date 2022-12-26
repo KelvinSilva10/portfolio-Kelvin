@@ -7,5 +7,7 @@ interface iAppProviderProps {
 }
 
 export const AppProvider = ({ children }: iAppProviderProps) => (
-  <ChakraProvider theme={theme}>{children}</ChakraProvider>
+  <ChakraProvider resetCSS theme={theme}>
+    {children}
+  </ChakraProvider>
 );

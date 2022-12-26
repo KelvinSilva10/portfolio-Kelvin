@@ -7,7 +7,12 @@ import {
   LinkBox,
   Text,
 } from '@chakra-ui/react';
-import { FaTwitter, FaInstagram, FaFacebookSquare } from 'react-icons/fa';
+import {
+  FaTwitter,
+  FaInstagram,
+  FaFacebookSquare,
+  FaWhatsapp,
+} from 'react-icons/fa';
 import React from 'react';
 
 const typing = keyframes`
@@ -63,6 +68,7 @@ export const DivInfo = () => {
       alignItems='center'
       justifyContent='space-around'
       zIndex='51'
+      id='home'
     >
       <Box>
         <Heading
@@ -132,6 +138,13 @@ export const DivInfo = () => {
           isExternal
         >
           <FaFacebookSquare size='35' />
+        </Link>
+        <Link
+          href='https://api.whatsapp.com/send?phone=5579999211440&text=Ol%C3%A1%20Kelvin%20Silva%2C%20gostaria%20de%20...'
+          _hover={{ color: '#098ba8', transform: ' scale(1.4)' }}
+          isExternal
+        >
+          <FaWhatsapp size='35' />
         </Link>
       </LinkBox>
     </Flex>

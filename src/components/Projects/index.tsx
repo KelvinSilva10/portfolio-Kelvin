@@ -29,9 +29,9 @@ export const Projects = () => {
         <UnorderedList
           margin='0'
           padding='20px'
-          w={['90%', '90%', '80%', '70%']}
+          w={['100vw', '100vw', '100%', '100%']}
           display='flex'
-          justifyContent='space-between'
+          justifyContent='flex-start'
           alignItems='center'
           gap='30px'
           flexWrap={['nowrap', 'nowrap', 'wrap']}

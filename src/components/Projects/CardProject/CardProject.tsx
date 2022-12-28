@@ -36,7 +36,7 @@ export const CardProject = ({
     <Card
       bg='linear-gradient(129.72deg, #26418A 0%, #161C38 98.26%)'
       w={['100%', '100%']}
-      minW='200px'
+      minW='300px'
       maxW='400px'
       boxShadow='0px 0px 20px #0DBDE3'
       p='20px 20px'
@@ -44,15 +44,21 @@ export const CardProject = ({
       gap='20px'
       _hover={{ transform: ' scale(1.05)', transition: 'ease 0.5s' }}
     >
-      <Image src={require(`../../../assets/projects/${image}`)} alt={name} />
+      <Image
+        src={require(`../../../assets/projects/${image}`)}
+        alt={name}
+        h={['150px', '150px', '200px', '200px']}
+      />
       <Heading as='h3' color='white' fontSize='18px'>
         {name}
       </Heading>
       <Text
         color='white'
-        fontSize='16px'
+        fontSize={['smaller', 'sm', 'md', 'md']}
         borderBottom='1px solid'
         paddingBottom='20px'
+        textAlign='justify'
+        minH={['180px', '180px', '200px']}
       >
         {description}
       </Text>

@@ -40,17 +40,30 @@ export const ModalProject = ({
 }: iModalViewProject) => {
   return (
     <Modal closeOnOverlayClick isOpen={isOpen} onClose={onClose}>
-      <ModalOverlay />
+      <ModalOverlay bg='none' backdropFilter='auto' backdropBlur='2px' />
       <ModalContent
         w={['90%']}
         bg='linear-gradient(129.72deg, #26418A 0%, #161C38 98.26%)'
       >
-        <Image src={require(`../../../assets/projects/${image}`)} />
+        <Image
+          src={require(`../../../assets/projects/${image}`)}
+          h={['150px', '150px', 'auto']}
+        />
         <ModalHeader>{name}</ModalHeader>
 
-        <ModalBody pb={6}>
+        <ModalBody
+          pb={6}
+          textAlign='justify'
+          fontSize={['smaller', 'sm', 'md']}
+        >
           {description}
-          <Text color='gray.500'>{techs}</Text>
+          <Text
+            color='gray.500'
+            textAlign='center'
+            fontSize={['smaller', 'sm', 'md']}
+          >
+            {techs}
+          </Text>
           <Link
             color='white'
             mr={3}

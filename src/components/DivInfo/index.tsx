@@ -12,6 +12,7 @@ import {
   FaInstagram,
   FaFacebookSquare,
   FaWhatsapp,
+  FaLinkedin,
 } from 'react-icons/fa';
 import React from 'react';
 
@@ -104,7 +105,7 @@ export const DivInfo = () => {
           overflow='hidden'
           borderRight='2px solid white'
         >
-          Desenvolvedor Web Front-End
+          Desenvolvedor Web Full-Stack
         </Text>
       </Box>
 
@@ -145,6 +146,13 @@ export const DivInfo = () => {
           isExternal
         >
           <FaWhatsapp size='35' />
+        </Link>
+        <Link
+          href='https://www.linkedin.com/in/kelvinsilva10/'
+          _hover={{ color: '#098ba8', transform: ' scale(1.4)' }}
+          isExternal
+        >
+          <FaLinkedin size='35' />
         </Link>
       </LinkBox>
     </Flex>

@@ -57,4 +57,9 @@ export const skillsBase = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
     name: 'Node.js',
   },
+  {
+    image:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
+    name: 'Jest',
+  },
 ];

@@ -21,12 +21,19 @@ export const projects = [
   },
   {
     name: 'Nu Kenzie',
-    description:
-      'Um app para gerenciamento de finanças.',
+    description: 'Um app para gerenciamento de finanças.',
     image: 'Nu-Kenzie.png',
     url: 'https://react-entrega-s1-template-nu-kenzie-kelvin-silva10.vercel.app/',
     gitHub: 'https://github.com/KelvinSilva10/Nu-Kenzie',
-    techs:
-      'ReactJs | Javascript | CSS',
+    techs: 'ReactJs | Javascript | CSS',
+  },
+  {
+    name: 'Project Connect',
+    description:
+      'Um app em JavaScript Vanilla onde você consegue gerenciar suas empresas, podendo criar empresas, editar e apagar, criar departamentos, adicionar funcionários e etc. Possui rotas autenticadas, modais, formulários de cadastro e login, input de pesquisa e requisições a API.',
+    image: 'Project-connect.png',
+    url: 'https://react-entrega-s1-template-nu-kenzie-kelvin-silva10.vercel.app/',
+    gitHub: 'https://project-connect.vercel.app/',
+    techs: 'Javascript Vanilla | CSS | Axios | Toastify',
   },
 ];

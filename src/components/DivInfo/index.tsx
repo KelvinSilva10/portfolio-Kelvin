@@ -62,7 +62,7 @@ export const DivInfo = () => {
     <Flex
       paddingY={['110px', '110px', '110px', '110px']}
       paddingX={['15px', '15px', '50px', '50px']}
-      w={['100%', '100%', '50%', '50%']}
+      w={['100%', '100%', '100%', '50%']}
       h='100%'
       display='flex'
       flexDirection='column'
@@ -74,7 +74,7 @@ export const DivInfo = () => {
       <Box>
         <Heading
           display='inline-block'
-          fontSize={['lg', 'lg', '2xl', '4xl']}
+          fontSize={['lg', 'lg', '3xl', '4xl']}
           fontWeight='normal'
           borderRight='2px solid white'
           animation={animation}
@@ -85,7 +85,7 @@ export const DivInfo = () => {
         </Heading>
         <Heading
           display='block'
-          fontSize={['3xl', '4xl', '4xl', '6xl']}
+          fontSize={['3xl', '4xl', '5xl', '6xl']}
           fontWeight='bold'
           color='#0DBDE3'
           animation={animation2}
@@ -115,10 +115,11 @@ export const DivInfo = () => {
         href='https://github.com/KelvinSilva10'
         isExternal
         _hover={{ bg: '#098ba8' }}
+        mt={['15px']}
       >
         Acessar Github
       </Link>
-      <LinkBox display='flex' gap='50px'>
+      <LinkBox display='flex' gap='30px' mt={['15px']}>
         <Link
           href='https://twitter.com/KelvinS61040484'
           _hover={{ color: '#098ba8', transform: ' scale(1.4)' }}

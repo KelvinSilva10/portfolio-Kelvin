@@ -33,12 +33,12 @@ export const LandingPage = () => {
       <Header />
       <Flex
         w='100%'
-        h='100vh'
+        h={['100vh']}
         display='flex'
         flexDirection={['column', 'column', 'row', 'row']}
         position='relative'
         overflow='hidden'
-        // padding={['15px']}
+        padding={['15px']}
       >
         <Image
           animation={animation}

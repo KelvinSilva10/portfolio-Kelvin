@@ -24,7 +24,6 @@ export const AboutMe = () => {
         fontSize='lg'
         maxW='500px'
         margin='0 auto'
-        text-align='justify'
       >
         <Image
           animation={animation}
@@ -43,9 +42,6 @@ export const AboutMe = () => {
           zIndex='50'
           padding={['30px', '30px', '0']}
           mt={['10px', '10px', '0', '0']}
-          // border='1px solid'
-          // padding='50px'
-          // boxShadow='-15px -11px 105px 57px rgba(0,218,222,0.4)'
         >
           <Slide left>
             <Heading>Sobre mim</Heading>

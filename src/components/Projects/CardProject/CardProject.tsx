@@ -2,15 +2,14 @@
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable arrow-body-style */
 import {
+  Box,
   Button,
   Card,
   Heading,
   Image,
-  Link,
   Text,
   useDisclosure,
 } from '@chakra-ui/react';
-import React from 'react';
 import { ModalProject } from '../ModalProject';
 
 interface ICardProps {
@@ -36,12 +35,11 @@ export const CardProject = ({
     <Card
       bg='linear-gradient(129.72deg, #26418A 0%, #161C38 98.26%)'
       w={['100%', '100%']}
-      minW='300px'
+      minW={['300px', '400px']}
       maxW='400px'
       boxShadow='0px 0px 20px #0DBDE3'
-      p='20px 20px'
+      p='20px 20px 70px 20px'
       display='flex'
-      gap='20px'
       _hover={{ transform: ' scale(1.05)', transition: 'ease 0.5s' }}
     >
       <Image
@@ -49,19 +47,41 @@ export const CardProject = ({
         alt={name}
         h={['150px', '150px', '200px', '200px']}
       />
-      <Heading as='h3' color='white' fontSize='18px'>
+      <Heading as='h3' color='white' fontSize='18px' mt='20px'>
         {name}
       </Heading>
-      <Text
-        color='white'
-        fontSize={['smaller', 'sm', 'md', 'md']}
-        borderBottom='1px solid'
-        paddingBottom='20px'
-        textAlign='justify'
-        minH={['180px', '180px', '200px']}
+      <Box
+        display='flex'
+        flexDirection='column'
+        h='auto'
+        justifyContent='space-between'
       >
-        {description}
-      </Text>
+        <Text
+          color='white'
+          fontSize={['smaller', 'sm', 'md', 'md']}
+          paddingBottom='20px'
+          textAlign='justify'
+          minH={['180px', '180px', '200px']}
+          mt='20px'
+        >
+          {description}
+        </Text>
+        <Button
+          bgColor='#0DBDE3'
+          color='white'
+          _hover={{ bg: '#098ba8' }}
+          padding={['10px 30px', '20px 40px', '20px 40px', '20px 40px']}
+          onClick={onOpen}
+          position='absolute'
+          bottom={['20px']}
+          left={['50%']}
+          transform={['translateX(-50%)']}
+          margin='0 auto'
+        >
+          Ver detalhes
+        </Button>
+      </Box>
+
       <ModalProject
         isOpen={isOpen}
         onClose={onClose}
@@ -72,15 +92,6 @@ export const CardProject = ({
         techs={techs}
         gitHub={gitHub}
       />
-      <Button
-        bgColor='#0DBDE3'
-        color='white'
-        _hover={{ bg: '#098ba8' }}
-        padding={['10px 30px', '20px 40px', '20px 40px', '20px 40px']}
-        onClick={onOpen}
-      >
-        Ver detalhes
-      </Button>
     </Card>
   );
 };

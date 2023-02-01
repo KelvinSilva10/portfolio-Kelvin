@@ -1,7 +1,5 @@
 import { Flex, Image, keyframes } from '@chakra-ui/react';
 import BolaAzul from '../../assets/bola-azul.svg';
-// import Engrenagem from '../../assets/engrenagens.svg';
-import Retangulo from '../../assets/retangulos.svg';
 import Retangulo2 from '../../assets/retangulosd.svg';
 import Engrenagem from '../../assets/engrenagem.svg';
 
@@ -21,7 +19,6 @@ const animationEngrenagem = keyframes`
   100% { transform: rotate(360deg) ;  }
 `;
 
-const animation = `${animationRetangules} 20s linear infinite`;
 const animation2 = `${animationRetangules} 30s linear infinite`;
 const animation3 = `${animationEngrenagem} 5s linear infinite`;
 
@@ -32,9 +29,9 @@ export const DivImgs = () => {
       justify='center'
       align='center'
       opacity={['0.5', '0.5', '1', '1']}
-      w={['100%', '100%', '50%', '50%']}
+      w={['100%', '100%', '100%', '50%']}
       h='100vh'
-      position={['absolute', 'absolute', 'relative']}
+      position={['absolute', 'absolute', 'absolute', 'relative']}
       zIndex='11'
       overflowY='hidden'
     >
@@ -69,7 +66,7 @@ export const DivImgs = () => {
         top='30%'
         right='34%'
       />
-     
+
       <Image
         src={Retangulo2}
         animation={animation2}

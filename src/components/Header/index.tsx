@@ -1,6 +1,6 @@
-import { Box, Flex, ListItem, Text, UnorderedList } from '@chakra-ui/react';
+import { Box, Flex, ListItem, UnorderedList } from '@chakra-ui/react';
 import { Link as LinkScroller } from 'react-scroll';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './nav.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -26,7 +26,6 @@ export const Header = () => {
       <Box as='nav' display='flex'>
         <Box
           position='relative'
-          // alignSelf={['flex-start', 'flex-start', 'center', 'center']}
           zIndex='100'
           transition='5s ease-in'
           display={['contents', 'contents', 'none', 'none']}

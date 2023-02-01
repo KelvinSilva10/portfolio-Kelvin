@@ -26,14 +26,15 @@ export const Skills = () => {
   const Slide = require('react-reveal/Slide');
 
   return (
-    <Flex h='100vh' position='relative' overflow='hidden'>
+    <Flex h={['100%']} position='relative' overflow='hidden'>
       <Flex
         flexDirection='column'
-        justifyContent='center'
+        // justifyContent='center'
         alignItems='center'
         fontSize='lg'
         margin='0 auto'
         w='100%'
+        h={['100%']}
         id='skills'
       >
         <Image

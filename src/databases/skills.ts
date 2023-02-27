@@ -62,4 +62,14 @@ export const skillsBase = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
     name: 'Jest',
   },
+  {
+    image:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+    name: 'Python',
+  },
+  {
+    image:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
+    name: 'Django',
+  },
 ];
